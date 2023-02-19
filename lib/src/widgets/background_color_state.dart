@@ -44,7 +44,7 @@ class _BackgroundColorGenerator extends State<StatefulWidget> {
           child: const Center(
             child: 
               Text(
-                'Hello there',
+                'Hey there',
                 style: TextStyle(
                   color: Colors.black,
                   fontSize: 18,
