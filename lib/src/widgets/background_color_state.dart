@@ -23,10 +23,10 @@ class _BackgroundColorGenerator extends State<StatefulWidget> {
     //randomly set values for properties "R", "G", "B" and "O - opacity"
     //with the Random generator from flutter
     randomGeneratedColor = Color.fromRGBO(
-        _random.nextInt(rangeToGenerateColors),
-        _random.nextInt(rangeToGenerateColors),
-        _random.nextInt(rangeToGenerateColors),
-        _random.nextDouble(),
+      _random.nextInt(rangeToGenerateColors),
+      _random.nextInt(rangeToGenerateColors),
+      _random.nextInt(rangeToGenerateColors),
+      _random.nextDouble(),
     );
 
     setState(() {
@@ -41,16 +41,15 @@ class _BackgroundColorGenerator extends State<StatefulWidget> {
       body: GestureDetector(
         behavior: HitTestBehavior.opaque,
         onTap: () => generateRandomColor(),
-          child: const Center(
-            child: 
-              Text(
-                'Hey there',
-                style: TextStyle(
-                  color: Colors.black,
-                  fontSize: 18,
-                ),
-              ),
+        child: const Center(
+          child: Text(
+            'Hey there',
+            style: TextStyle(
+              color: Colors.black,
+              fontSize: 18,
+            ),
           ),
+        ),
       ),
     );
   }
